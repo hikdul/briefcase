@@ -12,177 +12,28 @@
 .navigation
 {
     position: relative;
-    width: 70px;
-    margin-left: 25px;
-    height: 350px;
-    background-color: #333;
-    border-radius: 35px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-}
-.navigation ul
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.navigation ul li
-{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 1;
-}
-
-.navigation ul li .link
-{
-    position: relative;
+    width: 80px;
+    margin-left: 10px;
+    height: 100%;
+    background: #333; 
+    box-shadow: 25px 25px 75px rgba(0,0,0,.25),
+    10px 10px 70px rgba(0,0,0,.25),
+    inset 5px 5px 10px rgba(0,0,0,.5),
+    inset 5px 5px 20px rgba(255,255,255,.2),
+    inset 5px 5px 10px rgba(0,0,0,.75);
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    text-align: center;
-    /* todo: este es el color base... separar del color de la imagen y el de la letras*/
-    color: #fff;
-    font-weight: 500;
-    margin-left: -15px;
+    transform: translateY(25%);
 }
-/*todo: generar circulo de color que paresca undido*/
 
-.navigation ul li .link .icon
+.navigation ul
 {
     position: relative;
-    display: block;
-    transform: translateX(-90%);
-    line-height: 75px;
-    text-align: center;
-    transition: 0.5s;
+    margin-left: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-.navigation ul li.active .icon
-{
-    /*todo: esto tiene que cambiar por el color mas brillante*/
-    color: #4f962b
-}
-
-.navigation ul li .link .icon .image
-{
-    font-size: 24px;
-
-}
-/*todo: verificar por que no sale el texto*/
-.navigation ul li .link .title
-{
-    position: absolute;
-    top: 50%;
-    left: 110px;
-    background: #333;
-    transform: translateY(-10%);
-    padding: 5px 10px;
-    border-radius: 6px;
-    transition: .5s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    visibility: hidden;
-}
-
-.navigation ul li:hover .link .title
-{
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-63px) translateY(-50%);
-}
-/*
-.navigation ul li .link .title::before
-{
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    left: -8px;
-    top: 46%;
-    transform: rotate(45deg) translateY(-50%);
-    border-radius: 2px;
-}
-*/
-.navigation ul .indicator 
-{
-    position: absolute;
-    left: 0;
-    width: 70px;
-    height: 70px;
-    transition: .5s;
-}
-
-.navigation ul .indicator::before
-{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .5s;
-}
-
-/*
-.navigation ul li:nth-child(1).active ~ .indicator
-{
-    transform: translateY(calc(70px * 0));
-}
-
-
-.navigation ul li:nth-child(2).active ~ .indicator
-{
-    transform: translateY(calc(70px * 1));
-}
-
-
-.navigation ul li:nth-child(3).active ~ .indicator
-{
-    transform: translateY(calc(70px * 2));
-}
-
-.navigation ul li:nth-child(4).active ~ .indicator
-{
-    transform: translateY(cc(70px * 3));
-}
-
-.navigation ul li:nth-child(5).active ~ .indicator
-{
-    transform: translateY(calc(70px * 4));
-}
-
-
-
-.navigation ul li:nth-child(1).active ~ .indicator::before
-{
-    background: #333;
-}
-
-.navigation ul li:nth-child(2).active ~ .indicator::before
-{
-    background: #66175f;
-}
-.navigation ul li:nth-child(3).active ~ .indicator::before
-{
-    background: #375cc2;
-}
-.navigation ul li:nth-child(4).active ~ .indicator::before
-{
-    background: #316c3d;
-}
-.navigation ul li:nth-child(5).active ~ .indicator::before
-{
-    background: #ae681d;
-}
-
-*/
