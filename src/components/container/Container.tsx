@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { routes } from "../../constants/Routes/Router";
 import { About } from "../../Pages/About/About";
 import { ContactMe } from "../../Pages/Contact/ContactMe";
 import { Home } from "../../Pages/Home/Home";
@@ -10,10 +11,7 @@ export const Container = () => {
     <div className="container">
       <div className="container-fluid">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Projects" element={<Projects />} />
-          <Route path="about" element={<About />} />
-          <Route path="Contact" element={<ContactMe />} />
+          {routes.map(route =><Route path={route.path} element={<route.page />} />)}
         </Routes>
       </div>
     </div>
