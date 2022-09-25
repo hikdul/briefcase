@@ -1,10 +1,12 @@
-
 .navigationBar
 {
     display: flex;
+    padding-left: 0;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    max-width: 20%;
     background-color: #333;
     transition: .5s;
 }
@@ -36,4 +38,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.Container {
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin: auto;
+  background-color: #aaa;
 }

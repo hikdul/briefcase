@@ -1,17 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import "../css/NavigationBar.css";
+import { routes } from "../../../constants/Routes/Router";
 import { ButtonNavBar } from "./ButtonNavBar";
 
 export const NavigationBar = () => {
   return (
-    <section className=".navigationBar">
+    <div className=".navigationBar">
       <div className="navigation">
         <ul>
-          <ButtonNavBar icon={faHome} activeClass={true} title='Home'/>
-          <ButtonNavBar icon={faAddressCard} activeClass={false} title='About'/>
+          {routes.map(({whitButtom, icon, title, activeClass, path }, index) =>{
+            if(whitButtom) 
+              return(<ButtonNavBar
+              key={title}
+              icon={icon}
+              activeClass={activeClass}
+              title={title} 
+              path={path}/>
+          )})}
         </ul>
       </div>
-    </section>
+    </div>
   );
 };

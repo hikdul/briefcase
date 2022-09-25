@@ -1,0 +1,19 @@
+
+.container {
+  width: 100%;
+  max-width: 100vh;
+  margin: auto;
+}
+
+.container-fluid {
+  position: absolute;
+  display: block;
+  margin: auto;
+  top: 15px;
+  left: 150px;
+  width: 100%;
+  max-width: 80%;
+  border-radius: 15px;
+  background: #fff;
+  padding: 15px;
+}
