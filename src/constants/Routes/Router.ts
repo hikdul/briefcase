@@ -9,45 +9,40 @@ import { Projects } from "../../Pages/Projects/Project";
 
 export const routes: routesProps[] = [
     {
-        whitButtom: true,
         icon: faHouseLaptop,
         title: 'Home',
         path: '/',
-        activeClass: false,
+        end: true,
         page: Home
     },
     {
-        whitButtom: true,
         icon: faPersonDigging,
         title: 'Projects',
         path: '/Projects',
-        activeClass: false,
+        end: false,
         page: Projects
     },
     {
-        whitButtom: true,
         icon: faFeatherPointed,
         title: 'About',
         path: '/About',
-        activeClass: true,
+        end: false,
         page: About
     },
     {
-        whitButtom: true,
         icon: faAddressCard,
         title: 'Contact',
         path: '/Contact',
-        activeClass: false,
+        end: false,
         page: ContactMe
     },
 ]
 
 interface routesProps {
-    whitButtom: boolean
     icon: IconDefinition
     title: string
-    activeClass: boolean
     path: string
+    end: boolean
     page: () => JSX.Element
 }
 
