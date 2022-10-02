@@ -7,10 +7,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color:#333;
+    background-color:#fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Estilos para la barra de scroll*/
+
+/* Works on Mozilla */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #222;
+  --n: 50;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 20px;
+  border: 3px solid #222;
 }

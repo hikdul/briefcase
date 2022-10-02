@@ -9,9 +9,12 @@ import "./css/container.css";
 export const Container = () => {
   return (
     <div className="container">
+      <div className="container-border"></div>
       <div className="container-fluid">
         <Routes>
-          {routes.map(route =><Route path={route.path} element={<route.page />} />)}
+          {routes.map((route) => (
+            <Route path={route.path} element={<route.page />} />
+          ))}
         </Routes>
       </div>
     </div>
